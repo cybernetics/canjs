@@ -20,6 +20,8 @@ var account = new SauceLabs({
 	password: process.env.SAUCE_ACCESS_KEY
 });
 
+var files = ['test/index.html', 'test/production.html'];
+
 // https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities
 var platforms = [{
 	browserName: 'firefox',
@@ -84,7 +86,9 @@ platforms.forEach((platform) => {
 var tests = [];
 
 platforms.forEach((platform) => {
-	tests.push(makeTest(platform));
+	files.forEach((file) => {
+		tests.push(makeTest(platform, file));
+	});
 });
 
 var url = `http://${process.env.SAUCE_USERNAME}:${process.env.SAUCE_ACCESS_KEY}@ondemand.saucelabs.com:80/wd/hub`;
@@ -98,13 +102,13 @@ series(tests, () => {
 	});
 });
 
-// return a function that will run tests on a given platform
-function makeTest(platform) {
+// return a function that will run a given test file on a given platform
+function makeTest(platform, file) {
 	return function(cb) {
-		var url = 'http://localhost:3000/test/index.html?hidepassed';
+		var url = `http://localhost:3000/${file}?hidepassed`;
 		var timeoutId;
 
-		console.log('Running ' + platform.name);
+		console.log(`Running ${platform.name} (${url})`);
 
 		var testComplete = function(status) {
 			if (timeoutId) {
@@ -126,11 +130,11 @@ function makeTest(platform) {
 
 		driver.init(platform, (err, sessionId) => {
 			if (err) {
-				console.log('Error calling driver.init: ' + err);
+				console.log(`Error calling driver.init: ${err}`);
 				testComplete(false);
 				return;
 			}
-			console.log('Sauce Labs Job: https://saucelabs.com/jobs/' + sessionId);
+			console.log(`Sauce Labs Job: https://saucelabs.com/jobs/${sessionId}`);
 			var pollSauceLabsStatus = function() {
 				account.showJob(sessionId, (err, job) => {
 					if (err) {
@@ -179,7 +183,7 @@ function makeTest(platform) {
 					getElementText('#qunit-testresult .total')
 				], (err, [passed, failed, total]) => {
 					if (err) {
-						console.log('\nError checking test results: ' + err);
+						console.log(`\nError checking test results: ${err}`);
 						testComplete(false);
 						return;
 					}
