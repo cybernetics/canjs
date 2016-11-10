@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@page guides/pmo/EventHandling
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CanJS - Event Handling</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<link rel="stylesheet" type="text/css" href="../../static/bundles/bit-docs-site/static.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/docs/images/canjs_favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../docs/images/canjs_favicon_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../docs/images/canjs_favicon_114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../docs/images/canjs_favicon_128x128.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../docs/images/canjs_favicon_144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../docs/images/canjs_favicon_152x152.png">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-11', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+		<label for="nav-trigger">Menu</label>
+	  	<div id="everything">
+  <div id="left" class="column">
+    <div class="top-left">
+      
+          <div class="brand">
+	<div class="logo">
+		<a href="../../../index.html" alt="CanJS"></a>
+		<div class="dropdown project-dropdown">
+			<a href="https://donejs.com/">DoneJS</a>
+			<a href="http://stealjs.com/">StealJS</a>
+			<a href="http://jquerypp.com/">jQuery ++</a>
+			<a href="https://funcunit.com/">FuncUnit</a>
+			<a href="http://documentjs.com/">DocumentJS</a>
+		</div>
+	</div>
+	<div class="version">
+		<div class="version-number">
+			3.0.0
+		</div>
+		<div class="dropdown version-dropdown">
+			
+				<a href="https://v2.canjs.com">2.3.27</a>
+			
+		</div>
+	</div>
+</div>
+
+<div class="search-bar">
+	<p>
+		&nbsp;
+	</p>
+</div>
+
+      
+    </div>
+    <div class="bottom-left">
+       <div class="social-side-container">
+        <ul class="social-side">
+  <li>
+    <a class="header-mobile github" href="https://github.com/canjs/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/github.png">Github</a>
+  </li>
+  <li>
+    <a class="header-mobile twitter" href="https://twitter.com/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/twitter.png">Twitter</a>
+  </li>
+</ul>
+<ul class="social-side">
+  <li>
+    <a class="header-mobile" href="https://gitter.im/canjs/canjs" target="_blank">Chat</a>
+  </li>
+  <li>
+    <a class="header-mobile" href="http://forums.donejs.com/c/canjs" target="_blank">Forum</a>
+  </li>
+</ul>
+
+      </div>
+        
+            
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Components.html"
+							title="">
+							Components
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ApplicationDesign.html"
+							title="">
+							Application Design
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../pmo/Setup.html"
+							title="">
+							Setup
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Constructors.html"
+							title="">
+							Constructors
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="TheDefinePlugin.html"
+							title="">
+							The Define Plugin
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="StacheTemplates.html"
+							title="">
+							Stache Templates
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="AppStateAndRouting.html"
+							title="">
+							App State and Routing
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Observables.html"
+							title="">
+							Observables
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ViewModels.html"
+							title="">
+							View Models
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="DataModelsAndFixtures.html"
+							title="">
+							Data Models and Fixtures
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="LoadingStates.html"
+							title="">
+							Loading States
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="current
+           						parent
+           						expanded">
+						<a class="page"
+							href="EventHandling.html"
+							title="">
+							Event Handling
+						</a>
+						
+							
+
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="WebServiceCommunication.html"
+							title="">
+							Web Service Communication
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Recap.html"
+							title="">
+							Recap
+						</a>
+						
+					</li>
+				
+			
+		
+	</ul>
+
+
+        
+    </div>
+  </div>
+  <div id="right" class="column">
+    <div class="top-right">
+      <div class="top-right-top">
+	<ul class="top-right-bitovi">
+	  	<li class="dropdown">
+	    	<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+	    	<ul class="dropdown-menu">
+	      		<li><a href="http://bitovi.com">Bitovi.com</a></li>
+	      		<li><a href="http://bitovi.com/blog/">Blog</a></li>
+	      		<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+	      		<li><a href="http://bitovi.com/training/">Training</a></li>
+	      		<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+	    	</ul>
+	  	</li>
+	</ul>
+	<div class="brand">
+		<div class="logo">
+			<a href="../../../index.html" alt="CanJS"></a>
+		</div>
+	</div>
+	<ul class="top-right-links">
+  <li>
+    <a href="https://gitter.im/canjs/canjs">Chat</a>
+  </li>
+  <li>
+    <a href="http://forums.donejs.com/c/canjs">Forum</a>
+  </li>
+  <li>
+    <a class="github-button nav-social" href="https://github.com/canjs/canjs" data-count-href="/canjs/canjs/stargazers" data-count-api="/repos/canjs/canjs#stargazers_count">Star</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/canjs" class="twitter-follow-button nav-social" data-show-count="true" data-show-screen-name="false">Follow @canjs</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </li>
+</ul>
+</div>
+<div class="breadcrumb">
+	
+		<li><a href="../pmo.html">Place My Order Guide</a></li> /
+	
+	
+	<li><a href="EventHandling.html">Event Handling</a></li>
+	
+	<li class="breadcrumb-dropdown">/ <a> On this page</a>
+	  <ul class="on-this-page"></ul>
+	</li>
+	<div class="nav-toggle" title="Back to top"></div>
+</div>
+
+
+    </div>
+    <div class="bottom-right">
+      <article>
+  <section class="title">
+	<div class="page-type">
+		<h1>Event Handling</h1>
+		<div>page</div>
+	</div>
+	
+  
+	<section class="description">
+    
+</section>
+
+  
+	
+</section>
+<section class="on-this-page-table">
+</section>
+<section class="title-footer">
+	
+	
+		<ul class="title-links">
+			<!-- <li><a href="#">docco</a></li> -->
+			<li><a href="//github.com/canjs/canjs/tree/v3.0.0/docs/can-guides/experiment/pmo/event-handling.md">source</a></li>
+			<!-- <li><a href="#">download</a></li> -->
+			<!-- <li><a href="#">tests</a></li> -->
+		</ul>
+	
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+    <section class="body">
+    <div class="getting-started">
+<hr />
+<p><strong>In this Chapter</strong></p>
+<ul>
+<li>Event Handling</li>
+</ul>
+<p>Get the code for: <a href="/guides/examples/PlaceMyOrder/ch-8_canjs-getting-started.zip">chapter: event handling</a></p>
+<hr />
+<p>CanJS makes it easy to handle any
+<a href="https://developer.mozilla.org/en-US/docs/Web/Events">any standard DOM event</a>,
+such as a <code>change</code> event, in your component. To add an event handler, we
+have to make changes in two places:</p>
+<ol>
+<li>The view template</li>
+<li>The <code>can.Component</code> view model</li>
+</ol>
+<p>Before we can work with an example, let’s get the restaurant details page
+working. When you go to the Restaurants page in your browser, then select
+a state and city, then click the “Place My Order” button next to a restaurant,
+the page will have a <code>pmo-restaurant-details</code> element without any content.</p>
+<p><img src="../can/guides/images/event-handling/EmptyRestaurantDetails.png" alt="Empty pmo-restaurant-details element" /></p>
+<p>As we’ve discussed earlier, you need to include the component’s script
+file to register the component with CanJS. While we’re at it, we’re going to
+include the scripts for the rest of the components that we’re going to use.
+Let’s edit the <code>index.html</code> file by replacing these lines:</p>
+<pre><code class="language-html">    &lt;!-- Replace with order component script --&gt;
+    &lt;!-- Replace with order details component script --&gt;
+    &lt;!-- Replace with order history component script --&gt;
+    &lt;!-- Replace with order list component script --&gt;
+    &lt;!-- Replace with order phone component script --&gt;
+</code></pre>
+<p>with these lines:</p>
+<pre><code class="language-html">    &lt;script src=&quot;components/order/order.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;components/order_details/order_details.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;components/order_list/order_list.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;components/order_history/order_history.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;components/order_phone/order_phone.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>We have just one more file we need to include before we move on. This
+section is going to introduce orders from a restaurant, and
+we’ll want to have an <code>Order</code> model. Find this line:</p>
+<pre><code>    &lt;!-- Replace with order model script --&gt;
+</code></pre>
+<p>and replace it with this line:</p>
+<pre><code>    &lt;script src=&quot;models/order.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>Now, if you refresh the page, you’ll see the details for Spago.</p>
+<p><img src="../can/guides/images/application-design/RestaurantDetails.png" alt="Restaurant details page" /></p>
+<p>If you click the “Order from Spago” button, you’ll find yourself with a menu, a
+name field, and an address field; however, we’re missing one important piece of
+customer information: a phone number. Let’s build a <code>phone-validator</code>
+component to collect this information, and add some event handling to
+validate the field as the user types.</p>
+<p>There are two ways you can add event handling to an element:</p>
+<ul>
+<li>by adding an attribute with the event name prefixed by <code>can-</code>.</li>
+<li>by adding an attribute with the event name surrounded in parenthesis, e.g., <code>(click)</code>.</li>
+</ul>
+<pre><code class="language-html">&lt;!--Example using can- syntax--&gt;
+&lt;input name=&quot;phone&quot; type=&quot;text&quot; can-keyup=&quot;{setPhoneValue @element.val}&quot;&gt;
+
+&lt;!--Example using () syntax--&gt;
+&lt;input name=&quot;phone&quot; type=&quot;text&quot; ($keyup)=&quot;setPhoneValue(@element.val)&quot;&gt;
+</code></pre>
+<p>Of these, the preferred method is to use parenthesis to surround the event name.
+Again, <a href="https://developer.mozilla.org/en-US/docs/Web/Events">any standard DOM event</a> is supported.
+More information about <code>can.stache's</code> event and two-way binding syntaxes can be found at <a href="http://localhost:8080/docs/can.view.bindings.html">can.view.bindings</a>.</p>
+<p>In addition to defining an event, you can pass certain predefined parameters
+to the method that handles the event. These parameters include:</p>
+<ul>
+<li>@element - The can.$ wrapped element where the event occurred.</li>
+<li>@event - The event object&mdash;or properties off of that object.</li>
+<li>@viewModel - If the element is a can.Component, the component's viewModel.</li>
+<li>@context - The current context.</li>
+</ul>
+<p>You are not limited to these parameters. Any valid value can be passed in to the
+handler method. Separate method parameters with a space, e.g. <code>{{myMethod arg1 arg2}}</code></p>
+<p>Let’s open the <code>components/order_phone/order_phone.stache</code> file and add the
+following:</p>
+<pre><code class="language-html">&lt;div class=&quot;form-group{{#if error}} has-error{{/if}}&quot;&gt;
+  &lt;label&gt;Phone:&lt;/label&gt;
+  &lt;input name=&quot;phone&quot; type=&quot;text&quot; ($keyup)=&quot;setPhoneValue(@element.val)&quot;&gt;
+  {{#if error}}
+    {{#eq order.phone '911'}}
+      &lt;p&gt;That's not your real number :-(&lt;/p&gt;
+    {{else}}
+      &lt;p&gt;Please enter a phone number in the format 555-555-5555&lt;/p&gt;
+    {{/eq}}
+  {{/if}}
+&lt;/div&gt;
+</code></pre>
+<p>Notice the <code>&lt;input /&gt;</code> element with a <code>($keyup)</code> event handler. Whenever there
+is a <code>keyup</code> event in the <code>input</code>, the code in the value will be executed. We’re
+also passing <code>@element.val</code> to the <code>setPhoneValue</code> helper. Let’s
+add the component’s JavaScript to the <code>components/order_phone/order_phone.js</code>
+file:</p>
+<pre><code>var PhoneViewModel = can.Map.extend({
+  error: function(){
+    var phone = this.attr(&quot;order&quot;).attr(&quot;phone&quot;);
+    return phone &amp;&amp; (!/^(\d|-)*$/.test(phone) || phone === &quot;911&quot;);
+  },
+
+  setPhoneValue: function(val){
+    this.attr('order').attr('phone', val);
+  }
+});
+
+can.Component.extend({
+  tag: 'phone-validator',
+  viewModel: PhoneViewModel,
+  template: can.view('components/order_phone/order_phone.stache')
+});
+</code></pre>
+<p>Here you can see the <code>setPhoneValue</code> helper function, which takes the <code>val</code>
+passed to it by the template and sets the <code>phone</code> property of the
+component’s <code>order</code> property to <code>val</code>.</p>
+<p>But how do errors show up? The template is using the <code>error</code> property on the
+component, which looks like this:</p>
+<pre><code>  error: function(){
+    var phone = this.attr(&quot;order&quot;).attr(&quot;phone&quot;);
+    return phone &amp;&amp; (!/^(\d|-)*$/.test(phone) || phone === &quot;911&quot;);
+  },
+</code></pre>
+<p>Notice that the <code>error</code> property uses <code>this.attr(&quot;order&quot;).attr(&quot;phone&quot;)</code> in
+its getter. Because of CanJS’s <a href="Observables.html">observables</a>, CanJS is
+aware of us setting that value in our <code>setPhoneValue</code> helper, and thus only
+runs the getter again (called “recomputing the value”) when
+the value has changed. When the <code>setPhoneValue</code> helper sets the value, CanJS
+recomputes the <code>error</code> property’s value, which will return an error if you
+type “911” or anything that doesn’t look like a phone number.</p>
+<p><img src="../can/guides/images/event-handling/RestaurantOrderError911.png" alt="Restaurant order error when you type 911 as your phone number" /></p>
+<p>Note that you can place as many event handlers as you need on an element. Adding event
+handlers in this way directly binds the events to the element. This can impact
+performance in situations where you have many elements to bind events to. For
+more performant event binding, you can use the <code>can.Component</code>’s <a href="../docs/can.Component.prototype.events.html">events
+property</a>. Discussing this is beyond
+the scope of this introduction. See the API for more details.</p>
+<hr />
+<p><span class="pull-left"><a href="LoadingStates.html">&lsaquo; Loading States</a></span>
+<span class="pull-right"><a href="WebServiceCommunication.html">Web Service Communication &rsaquo;</a></span></p>
+</div>
+
+</section>
+
+  
+
+
+<script type="text/javascript">
+  var docObject = {"src":{"path":"docs/can-guides/experiment/pmo/event-handling.md"},"description":"\n","name":"guides/pmo/EventHandling","title":"Event Handling","type":"page","parent":"guides/pmo","order":11,"disabletableofcontents":true,"comment":" ","pathToRoot":"../../.."};
+</script>
+</article>
+	  
+        <footer><p>CanJS is part of <a href="http://donejs.com" target="_blank">DoneJS</a>. Created and maintained by the core <a href="https://donejs.com/About.html#section=section_Team" target="_blank">DoneJS team</a> and <a href="http://bitovi.com" target="_blank">Bitovi</a>. <strong>Currently 3.0.0.</strong></p></footer>
+	      </div>
+  </div>
+</div>
+
+		
+			<script>
+				steal = {
+				  	instantiated: {
+				    	"bundles/bit-docs-site/static.css!$css" : null
+				  	}
+			  	};
+			</script>
+			<script type='text/javascript' data-main="bit-docs-site/static" src="../../static/node_modules/steal/steal.production.js"></script>
+		
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>

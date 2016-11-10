@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@page guides/pmo/ViewModels
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CanJS - View Models</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<link rel="stylesheet" type="text/css" href="../../static/bundles/bit-docs-site/static.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/docs/images/canjs_favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../docs/images/canjs_favicon_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../docs/images/canjs_favicon_114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../docs/images/canjs_favicon_128x128.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../docs/images/canjs_favicon_144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../docs/images/canjs_favicon_152x152.png">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-11', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+		<label for="nav-trigger">Menu</label>
+	  	<div id="everything">
+  <div id="left" class="column">
+    <div class="top-left">
+      
+          <div class="brand">
+	<div class="logo">
+		<a href="../../../index.html" alt="CanJS"></a>
+		<div class="dropdown project-dropdown">
+			<a href="https://donejs.com/">DoneJS</a>
+			<a href="http://stealjs.com/">StealJS</a>
+			<a href="http://jquerypp.com/">jQuery ++</a>
+			<a href="https://funcunit.com/">FuncUnit</a>
+			<a href="http://documentjs.com/">DocumentJS</a>
+		</div>
+	</div>
+	<div class="version">
+		<div class="version-number">
+			3.0.0
+		</div>
+		<div class="dropdown version-dropdown">
+			
+				<a href="https://v2.canjs.com">2.3.27</a>
+			
+		</div>
+	</div>
+</div>
+
+<div class="search-bar">
+	<p>
+		&nbsp;
+	</p>
+</div>
+
+      
+    </div>
+    <div class="bottom-left">
+       <div class="social-side-container">
+        <ul class="social-side">
+  <li>
+    <a class="header-mobile github" href="https://github.com/canjs/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/github.png">Github</a>
+  </li>
+  <li>
+    <a class="header-mobile twitter" href="https://twitter.com/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/twitter.png">Twitter</a>
+  </li>
+</ul>
+<ul class="social-side">
+  <li>
+    <a class="header-mobile" href="https://gitter.im/canjs/canjs" target="_blank">Chat</a>
+  </li>
+  <li>
+    <a class="header-mobile" href="http://forums.donejs.com/c/canjs" target="_blank">Forum</a>
+  </li>
+</ul>
+
+      </div>
+        
+            
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Components.html"
+							title="">
+							Components
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ApplicationDesign.html"
+							title="">
+							Application Design
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../pmo/Setup.html"
+							title="">
+							Setup
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Constructors.html"
+							title="">
+							Constructors
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="TheDefinePlugin.html"
+							title="">
+							The Define Plugin
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="StacheTemplates.html"
+							title="">
+							Stache Templates
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="AppStateAndRouting.html"
+							title="">
+							App State and Routing
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Observables.html"
+							title="">
+							Observables
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="current
+           						parent
+           						expanded">
+						<a class="page"
+							href="ViewModels.html"
+							title="">
+							View Models
+						</a>
+						
+							
+
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="DataModelsAndFixtures.html"
+							title="">
+							Data Models and Fixtures
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="LoadingStates.html"
+							title="">
+							Loading States
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="EventHandling.html"
+							title="">
+							Event Handling
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="WebServiceCommunication.html"
+							title="">
+							Web Service Communication
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Recap.html"
+							title="">
+							Recap
+						</a>
+						
+					</li>
+				
+			
+		
+	</ul>
+
+
+        
+    </div>
+  </div>
+  <div id="right" class="column">
+    <div class="top-right">
+      <div class="top-right-top">
+	<ul class="top-right-bitovi">
+	  	<li class="dropdown">
+	    	<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+	    	<ul class="dropdown-menu">
+	      		<li><a href="http://bitovi.com">Bitovi.com</a></li>
+	      		<li><a href="http://bitovi.com/blog/">Blog</a></li>
+	      		<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+	      		<li><a href="http://bitovi.com/training/">Training</a></li>
+	      		<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+	    	</ul>
+	  	</li>
+	</ul>
+	<div class="brand">
+		<div class="logo">
+			<a href="../../../index.html" alt="CanJS"></a>
+		</div>
+	</div>
+	<ul class="top-right-links">
+  <li>
+    <a href="https://gitter.im/canjs/canjs">Chat</a>
+  </li>
+  <li>
+    <a href="http://forums.donejs.com/c/canjs">Forum</a>
+  </li>
+  <li>
+    <a class="github-button nav-social" href="https://github.com/canjs/canjs" data-count-href="/canjs/canjs/stargazers" data-count-api="/repos/canjs/canjs#stargazers_count">Star</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/canjs" class="twitter-follow-button nav-social" data-show-count="true" data-show-screen-name="false">Follow @canjs</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </li>
+</ul>
+</div>
+<div class="breadcrumb">
+	
+		<li><a href="../pmo.html">Place My Order Guide</a></li> /
+	
+	
+	<li><a href="ViewModels.html">View Models</a></li>
+	
+	<li class="breadcrumb-dropdown">/ <a> On this page</a>
+	  <ul class="on-this-page"></ul>
+	</li>
+	<div class="nav-toggle" title="Back to top"></div>
+</div>
+
+
+    </div>
+    <div class="bottom-right">
+      <article>
+  <section class="title">
+	<div class="page-type">
+		<h1>View Models</h1>
+		<div>page</div>
+	</div>
+	
+  
+	<section class="description">
+    
+</section>
+
+  
+	
+</section>
+<section class="on-this-page-table">
+</section>
+<section class="title-footer">
+	
+	
+		<ul class="title-links">
+			<!-- <li><a href="#">docco</a></li> -->
+			<li><a href="//github.com/canjs/canjs/tree/v3.0.0/docs/can-guides/experiment/pmo/view-models.md">source</a></li>
+			<!-- <li><a href="#">download</a></li> -->
+			<!-- <li><a href="#">tests</a></li> -->
+		</ul>
+	
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+    <section class="body">
+    <div class="getting-started">
+<hr />
+<p><strong>In this Chapter</strong></p>
+<ul>
+<li>Getting and Setting Scope Properties</li>
+<li>View Models</li>
+</ul>
+<p>Get the code for: <a href="/guides/examples/PlaceMyOrder/ch-5_canjs-getting-started.zip">chapter: view models</a></p>
+<hr />
+<p>In the last chapter, we created the <code>currentRestaurant</code> component, and included it in our
+template. Let’s add a little bit more advanced functionality: two select elements,
+where selecting an option in the first one changes the options in the second.</p>
+<p>Open your <code>components/restaurant_list/restaurant_list.stache</code> and edit it as follows:</p>
+<pre><code>&lt;div class=&quot;restaurants&quot;&gt;
+  &lt;h2 class=&quot;page-header&quot;&gt;Restaurants&lt;/h2&gt;
+  &lt;form class=&quot;form&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label&gt;State&lt;/label&gt;
+      &lt;select {($value)}=&quot;state&quot;&gt;
+        {{^if state}}
+        &lt;option value=&quot;&quot;&gt;Choose a state&lt;/option&gt;
+        {{/if}}
+        {{#each states}}
+        &lt;option value=&quot;{{name}}&quot;&gt;{{name}}&lt;/option&gt;
+        {{/each}}
+      &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;!-- The city select will go here --&gt;
+  &lt;/form&gt;
+
+  &lt;!-- Restaurants code will go here --&gt;
+&lt;/div&gt;
+</code></pre>
+<p>In the above code, you can see one select element for selecting a state. You can
+see <code>{{#each}}</code> being used to create the list of options. You can also see that
+if no state is selected, the “Choose a state” message is included as an option
+until one has been selected.</p>
+<p>Let’s modify our <code>components/restaurant_list/restaurant_list.js</code> file to include
+what’s needed for our partial:</p>
+<pre><code>can.Component.extend({
+  tag: 'pmo-restaurant-list',
+  template: can.view('components/restaurant_list/restaurant_list.stache'),
+  viewModel: can.Map.extend({
+    define: {
+      state: {
+        value: null,
+        set: function(newState) {
+          if (newState) {
+            alert('Selected “' + newState + '” state.');
+          }
+          return newState;
+        }
+      },
+      states: {
+        value: [
+          {
+            cities: ['Green Bay', 'Milwaukee'],
+            name: 'Wisconsin'
+          },
+          {
+            cities: ['Detroit', 'Ann Arbor'],
+            name: 'Michigan'
+          },
+          {
+            cities: ['Chicago', 'Peoria'],
+            name: 'Illinois'
+          }
+        ]
+      },
+      // City code will go here
+    }
+  })
+});
+</code></pre>
+<p>Here we’re using <a href="TheDefinePlugin.html">the define plugin</a> to set up two new
+properties:</p>
+<ul>
+<li><code>state</code> to keep track of the selected state, and</li>
+<li><code>states</code> with the list of states that can be selected.</li>
+</ul>
+<p>In the <code>state</code> setter, we’re showing an alert when a new state is selected.
+If you refresh the Restaurants page, you should see a select element with the
+states as options; when you select a state, an alert will appear with the selected
+state’s name.</p>
+<p><img src="../can/guides/images/view-models/view_model_state.png" alt="set up state selector" /></p>
+<h2>Getting and Setting Scope Properties</h2>
+<p>It’s important to understand how to get and set the properties
+of the view model. Getting and setting are done through the <code>attr</code> function off of
+the <code>viewModel</code> object, in this case <code>this</code> is bound to the scope, because we’re
+within a method of the scope. Let’s look at an example.</p>
+<p>Open up <code>components/restaurant_list/restaurant_list.js</code> and replace this:</p>
+<pre><code>// City code will go here
+</code></pre>
+<p>with this:</p>
+<pre><code>      cities: {
+        get: function() {
+          var state = this.attr('state');
+          return state &amp;&amp; this.attr('citiesByState')[state];
+        }
+      },
+      citiesByState: {
+        get: function() {
+          var citiesByState = {};
+          this.attr('states').forEach(function(state) {
+            citiesByState[state.name] = state.cities;
+          });
+          return citiesByState;
+        }
+      },
+      city: {
+        value: null
+      }
+</code></pre>
+<p>This code creates three new properties:</p>
+<ul>
+<li><code>city</code> with the name of the city that’s selected,</li>
+<li><code>citiesByState</code> which is an object that has the list of cities by state name, and</li>
+<li><code>cities</code> which is the list of cities for the selected state.</li>
+</ul>
+<p>Let’s update the stache file to take advantage of these new properties.
+Open <code>components/restaurant_list/restaurant_list.stache</code> and find this line:</p>
+<pre><code>&lt;!-- The city select will go here --&gt;
+</code></pre>
+<p>and replace it with this:</p>
+<pre><code>    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label&gt;City&lt;/label&gt;
+      &lt;select {($value)}=&quot;city&quot;&gt;
+        {{^if city}}
+        &lt;option value=&quot;&quot;&gt;Choose a city&lt;/option&gt;
+        {{/if}}
+        {{#each cities}}
+        &lt;option&gt;{{.}}&lt;/option&gt;
+        {{/each}}
+      &lt;/select&gt;
+    &lt;/div&gt;
+</code></pre>
+<p>This new part of the template will show a select element with the cities
+for the selected state as options. Note that when no city is selected,
+the element will have a “Choose a city” option.</p>
+<p>If you refresh the Restaurants page, you’ll see the new city select
+element that has options as soon as you select a state. However, there’s
+a bug: if you change the state, the first city for the new state is automatically
+selected, even though the user hasn’t made a city choice. Let’s fix this
+by nullifying the city when the state changes. Find the state setter:</p>
+<pre><code>        set: function(newState) {
+          if (newState) {
+            alert('Selected “' + newState + '” state.');
+          }
+          return newState;
+        }
+</code></pre>
+<p>and replace it with this:</p>
+<pre><code>        set: function() {
+          // Remove the city when the state changes
+          this.attr('city', null);
+        }
+</code></pre>
+<p>Notice that we are nullifying the city property when the state changes.
+If you refresh the Restaurants page in your browser, select a state,
+select a city, then select another state, you’ll see the “Choose a city”
+option in the city select element instead of the first city in that
+state.</p>
+<p><img src="../can/guides/images/view-models/view_model_city.png" alt="set up state selector" /></p>
+<h2>Separating the Component &amp; View Model</h2>
+<p>It’s considered a best practice to keep your <code>can.Components</code>
+thin. This helps maintain readability and maintainability. To accomplish this,
+you extract your scope from the <code>can.Component</code> into a <code>can.Map</code>.</p>
+<p>Open up <code>components/restaurant_list/restaurant_list.js</code> and replace the
+contents of the file with this:</p>
+<pre><code>var RestaurantListViewModel = can.Map.extend({
+  define: {
+    state: {
+      value: null,
+      set: function() {
+        // Remove the city when the state changes
+        this.attr('city', null);
+      }
+    },
+    states: {
+      value: [
+        {
+          cities: ['Green Bay', 'Milwaukee'],
+          name: 'Wisconsin'
+        },
+        {
+          cities: ['Detroit', 'Ann Arbor'],
+          name: 'Michigan'
+        },
+        {
+          cities: ['Chicago', 'Peoria'],
+          name: 'Illinois'
+        }
+      ]
+    },
+    cities: {
+      get: function() {
+        var state = this.attr('state');
+        return state &amp;&amp; this.attr('citiesByState')[state];
+      }
+    },
+    citiesByState: {
+      get: function() {
+        var citiesByState = {};
+        this.attr('states').forEach(function(state) {
+          citiesByState[state.name] = state.cities;
+        });
+        return citiesByState;
+      }
+    },
+    city: {
+      value: null
+    }
+  }
+});
+
+can.Component.extend({
+  tag: 'pmo-restaurant-list',
+  template: can.view('components/restaurant_list/restaurant_list.stache'),
+  viewModel: RestaurantListViewModel
+});
+</code></pre>
+<p>If you go back out to your application and refresh the page, it should all
+look and work the same. What we’ve done, by separating out the view model,
+is make the code easier to read and maintain.</p>
+<p>In the next chapter, we’ll learn about working with more realistic data by
+adding REST service interaction with <code>can.Model</code>.</p>
+<hr />
+<p><span class="pull-left"><a href="Components.html">&lsaquo; Components</a></span>
+<span class="pull-right"><a href="DataModelsAndFixtures.html">Data Models and Fixtures &rsaquo;</a></span></p>
+</div>
+
+</section>
+
+  
+
+
+<script type="text/javascript">
+  var docObject = {"src":{"path":"docs/can-guides/experiment/pmo/view-models.md"},"description":"\n","name":"guides/pmo/ViewModels","title":"View Models","type":"page","parent":"guides/pmo","order":8,"disabletableofcontents":true,"comment":" ","pathToRoot":"../../.."};
+</script>
+</article>
+	  
+        <footer><p>CanJS is part of <a href="http://donejs.com" target="_blank">DoneJS</a>. Created and maintained by the core <a href="https://donejs.com/About.html#section=section_Team" target="_blank">DoneJS team</a> and <a href="http://bitovi.com" target="_blank">Bitovi</a>. <strong>Currently 3.0.0.</strong></p></footer>
+	      </div>
+  </div>
+</div>
+
+		
+			<script>
+				steal = {
+				  	instantiated: {
+				    	"bundles/bit-docs-site/static.css!$css" : null
+				  	}
+			  	};
+			</script>
+			<script type='text/javascript' data-main="bit-docs-site/static" src="../../static/node_modules/steal/steal.production.js"></script>
+		
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>

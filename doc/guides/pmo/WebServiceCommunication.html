@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@page guides/pmo/WebServiceCommunication
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CanJS - Web Service Communication</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<link rel="stylesheet" type="text/css" href="../../static/bundles/bit-docs-site/static.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/docs/images/canjs_favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../docs/images/canjs_favicon_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../docs/images/canjs_favicon_114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../docs/images/canjs_favicon_128x128.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../docs/images/canjs_favicon_144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../docs/images/canjs_favicon_152x152.png">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-11', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+		<label for="nav-trigger">Menu</label>
+	  	<div id="everything">
+  <div id="left" class="column">
+    <div class="top-left">
+      
+          <div class="brand">
+	<div class="logo">
+		<a href="../../../index.html" alt="CanJS"></a>
+		<div class="dropdown project-dropdown">
+			<a href="https://donejs.com/">DoneJS</a>
+			<a href="http://stealjs.com/">StealJS</a>
+			<a href="http://jquerypp.com/">jQuery ++</a>
+			<a href="https://funcunit.com/">FuncUnit</a>
+			<a href="http://documentjs.com/">DocumentJS</a>
+		</div>
+	</div>
+	<div class="version">
+		<div class="version-number">
+			3.0.0
+		</div>
+		<div class="dropdown version-dropdown">
+			
+				<a href="https://v2.canjs.com">2.3.27</a>
+			
+		</div>
+	</div>
+</div>
+
+<div class="search-bar">
+	<p>
+		&nbsp;
+	</p>
+</div>
+
+      
+    </div>
+    <div class="bottom-left">
+       <div class="social-side-container">
+        <ul class="social-side">
+  <li>
+    <a class="header-mobile github" href="https://github.com/canjs/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/github.png">Github</a>
+  </li>
+  <li>
+    <a class="header-mobile twitter" href="https://twitter.com/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/twitter.png">Twitter</a>
+  </li>
+</ul>
+<ul class="social-side">
+  <li>
+    <a class="header-mobile" href="https://gitter.im/canjs/canjs" target="_blank">Chat</a>
+  </li>
+  <li>
+    <a class="header-mobile" href="http://forums.donejs.com/c/canjs" target="_blank">Forum</a>
+  </li>
+</ul>
+
+      </div>
+        
+            
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Components.html"
+							title="">
+							Components
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ApplicationDesign.html"
+							title="">
+							Application Design
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../pmo/Setup.html"
+							title="">
+							Setup
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Constructors.html"
+							title="">
+							Constructors
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="TheDefinePlugin.html"
+							title="">
+							The Define Plugin
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="StacheTemplates.html"
+							title="">
+							Stache Templates
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="AppStateAndRouting.html"
+							title="">
+							App State and Routing
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Observables.html"
+							title="">
+							Observables
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ViewModels.html"
+							title="">
+							View Models
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="DataModelsAndFixtures.html"
+							title="">
+							Data Models and Fixtures
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="LoadingStates.html"
+							title="">
+							Loading States
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="EventHandling.html"
+							title="">
+							Event Handling
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="current
+           						parent
+           						expanded">
+						<a class="page"
+							href="WebServiceCommunication.html"
+							title="">
+							Web Service Communication
+						</a>
+						
+							
+
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Recap.html"
+							title="">
+							Recap
+						</a>
+						
+					</li>
+				
+			
+		
+	</ul>
+
+
+        
+    </div>
+  </div>
+  <div id="right" class="column">
+    <div class="top-right">
+      <div class="top-right-top">
+	<ul class="top-right-bitovi">
+	  	<li class="dropdown">
+	    	<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+	    	<ul class="dropdown-menu">
+	      		<li><a href="http://bitovi.com">Bitovi.com</a></li>
+	      		<li><a href="http://bitovi.com/blog/">Blog</a></li>
+	      		<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+	      		<li><a href="http://bitovi.com/training/">Training</a></li>
+	      		<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+	    	</ul>
+	  	</li>
+	</ul>
+	<div class="brand">
+		<div class="logo">
+			<a href="../../../index.html" alt="CanJS"></a>
+		</div>
+	</div>
+	<ul class="top-right-links">
+  <li>
+    <a href="https://gitter.im/canjs/canjs">Chat</a>
+  </li>
+  <li>
+    <a href="http://forums.donejs.com/c/canjs">Forum</a>
+  </li>
+  <li>
+    <a class="github-button nav-social" href="https://github.com/canjs/canjs" data-count-href="/canjs/canjs/stargazers" data-count-api="/repos/canjs/canjs#stargazers_count">Star</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/canjs" class="twitter-follow-button nav-social" data-show-count="true" data-show-screen-name="false">Follow @canjs</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </li>
+</ul>
+</div>
+<div class="breadcrumb">
+	
+		<li><a href="../pmo.html">Place My Order Guide</a></li> /
+	
+	
+	<li><a href="WebServiceCommunication.html">Web Service Communication</a></li>
+	
+	<li class="breadcrumb-dropdown">/ <a> On this page</a>
+	  <ul class="on-this-page"></ul>
+	</li>
+	<div class="nav-toggle" title="Back to top"></div>
+</div>
+
+
+    </div>
+    <div class="bottom-right">
+      <article>
+  <section class="title">
+	<div class="page-type">
+		<h1>Web Service Communication</h1>
+		<div>page</div>
+	</div>
+	
+  
+	<section class="description">
+    
+</section>
+
+  
+	
+</section>
+<section class="on-this-page-table">
+</section>
+<section class="title-footer">
+	
+	
+		<ul class="title-links">
+			<!-- <li><a href="#">docco</a></li> -->
+			<li><a href="//github.com/canjs/canjs/tree/v3.0.0/docs/can-guides/experiment/pmo/web-service-communication.md">source</a></li>
+			<!-- <li><a href="#">download</a></li> -->
+			<!-- <li><a href="#">tests</a></li> -->
+		</ul>
+	
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+    <section class="body">
+    <div class="getting-started">
+<hr />
+<p><strong>In this Chapter</strong></p>
+<ul>
+<li>Saving and Updating a can.Model</li>
+</ul>
+<p>Get the code for: <a href="/guides/examples/PlaceMyOrder/ch-9_canjs-getting-started.zip">chapter: web service communication</a></p>
+<hr />
+<p>To illustrate sending data to a service, let’s implement saving an order in
+our <code>pmo-order</code> component. In the <code>components/order/order.js</code> file, locate
+where the <code>placeOrder</code> property is defined:</p>
+<pre><code>  placeOrder: function() {
+  },
+</code></pre>
+<p>and replace it with this implementation:</p>
+<pre><code>  placeOrder: function() {
+    var order = this.attr('order');
+    this.attr('saveStatus', order.save());
+    return false;
+  },
+</code></pre>
+<p>Let’s see what's going on here:</p>
+<ul>
+<li>The first line in the getter function gets the <code>order</code>,</li>
+<li>the second sets the <code>saveStatus</code> property on the component’s view model to whatever the <code>save</code> method on the <code>order</code> object returns, and</li>
+<li>the third line returns <code>false</code> to stop the <code>form</code> element’s default submission behavior.</li>
+</ul>
+<h2>Saving and updating a model</h2>
+<p>Let’s look at a few items in the code above.
+Unlike data access functions (e.g., <code>findAll</code>, <code>findOne</code>),
+which are called statically off of the prototype, the <code>save</code>, <code>update</code>, and
+<code>delete</code> functions are called off of a specific instance of a model. So, if
+we want to create a new order, we will need to work with an instance of the
+<code>Order</code> model.</p>
+<p>To provide fixture support for saving our <code>can.Model</code>, open up <code>models/fixtures.js</code>
+and add the following fixture:</p>
+<pre><code>can.fixture({
+  'POST /api/orders': function(request, response){
+    var data = request.data;
+
+    response(can.extend({}, data, {
+      &quot;_id&quot;:&quot;556f1503fdf0425207000001&quot;
+    }));
+  },
+
+  'GET /api/orders': 'models/orders.json'
+});
+</code></pre>
+<p>Here, you can see that we’re implementing the <code>save</code> functionality by
+responding to <code>POST</code> requests to <code>/api/orders</code> with the original request
+data, plus an <code>_id</code> property.</p>
+<p>We also added support for <code>GET</code> requests to <code>/api/orders</code> so we can provide
+order history functionality.</p>
+<hr />
+<p><span class="pull-left"><a href="EventHandling.html">&lsaquo; Event Handling</a></span>
+<span class="pull-right"><a href="Recap.html">Recap &rsaquo;</a></span></p>
+</div>
+
+</section>
+
+  
+
+
+<script type="text/javascript">
+  var docObject = {"src":{"path":"docs/can-guides/experiment/pmo/web-service-communication.md"},"description":"\n","name":"guides/pmo/WebServiceCommunication","title":"Web Service Communication","type":"page","parent":"guides/pmo","order":12,"disabletableofcontents":true,"comment":" ","pathToRoot":"../../.."};
+</script>
+</article>
+	  
+        <footer><p>CanJS is part of <a href="http://donejs.com" target="_blank">DoneJS</a>. Created and maintained by the core <a href="https://donejs.com/About.html#section=section_Team" target="_blank">DoneJS team</a> and <a href="http://bitovi.com" target="_blank">Bitovi</a>. <strong>Currently 3.0.0.</strong></p></footer>
+	      </div>
+  </div>
+</div>
+
+		
+			<script>
+				steal = {
+				  	instantiated: {
+				    	"bundles/bit-docs-site/static.css!$css" : null
+				  	}
+			  	};
+			</script>
+			<script type='text/javascript' data-main="bit-docs-site/static" src="../../static/node_modules/steal/steal.production.js"></script>
+		
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>

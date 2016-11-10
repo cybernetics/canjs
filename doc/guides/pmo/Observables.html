@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@page guides/pmo/Observables
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CanJS - Observables</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<link rel="stylesheet" type="text/css" href="../../static/bundles/bit-docs-site/static.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/docs/images/canjs_favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../docs/images/canjs_favicon_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../docs/images/canjs_favicon_114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../docs/images/canjs_favicon_128x128.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../docs/images/canjs_favicon_144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../docs/images/canjs_favicon_152x152.png">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-11', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+		<label for="nav-trigger">Menu</label>
+	  	<div id="everything">
+  <div id="left" class="column">
+    <div class="top-left">
+      
+          <div class="brand">
+	<div class="logo">
+		<a href="../../../index.html" alt="CanJS"></a>
+		<div class="dropdown project-dropdown">
+			<a href="https://donejs.com/">DoneJS</a>
+			<a href="http://stealjs.com/">StealJS</a>
+			<a href="http://jquerypp.com/">jQuery ++</a>
+			<a href="https://funcunit.com/">FuncUnit</a>
+			<a href="http://documentjs.com/">DocumentJS</a>
+		</div>
+	</div>
+	<div class="version">
+		<div class="version-number">
+			3.0.0
+		</div>
+		<div class="dropdown version-dropdown">
+			
+				<a href="https://v2.canjs.com">2.3.27</a>
+			
+		</div>
+	</div>
+</div>
+
+<div class="search-bar">
+	<p>
+		&nbsp;
+	</p>
+</div>
+
+      
+    </div>
+    <div class="bottom-left">
+       <div class="social-side-container">
+        <ul class="social-side">
+  <li>
+    <a class="header-mobile github" href="https://github.com/canjs/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/github.png">Github</a>
+  </li>
+  <li>
+    <a class="header-mobile twitter" href="https://twitter.com/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/twitter.png">Twitter</a>
+  </li>
+</ul>
+<ul class="social-side">
+  <li>
+    <a class="header-mobile" href="https://gitter.im/canjs/canjs" target="_blank">Chat</a>
+  </li>
+  <li>
+    <a class="header-mobile" href="http://forums.donejs.com/c/canjs" target="_blank">Forum</a>
+  </li>
+</ul>
+
+      </div>
+        
+            
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Components.html"
+							title="">
+							Components
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ApplicationDesign.html"
+							title="">
+							Application Design
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../pmo/Setup.html"
+							title="">
+							Setup
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Constructors.html"
+							title="">
+							Constructors
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="TheDefinePlugin.html"
+							title="">
+							The Define Plugin
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="StacheTemplates.html"
+							title="">
+							Stache Templates
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="AppStateAndRouting.html"
+							title="">
+							App State and Routing
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="current
+           						parent
+           						expanded">
+						<a class="page"
+							href="Observables.html"
+							title="">
+							Observables
+						</a>
+						
+							
+
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ViewModels.html"
+							title="">
+							View Models
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="DataModelsAndFixtures.html"
+							title="">
+							Data Models and Fixtures
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="LoadingStates.html"
+							title="">
+							Loading States
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="EventHandling.html"
+							title="">
+							Event Handling
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="WebServiceCommunication.html"
+							title="">
+							Web Service Communication
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Recap.html"
+							title="">
+							Recap
+						</a>
+						
+					</li>
+				
+			
+		
+	</ul>
+
+
+        
+    </div>
+  </div>
+  <div id="right" class="column">
+    <div class="top-right">
+      <div class="top-right-top">
+	<ul class="top-right-bitovi">
+	  	<li class="dropdown">
+	    	<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+	    	<ul class="dropdown-menu">
+	      		<li><a href="http://bitovi.com">Bitovi.com</a></li>
+	      		<li><a href="http://bitovi.com/blog/">Blog</a></li>
+	      		<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+	      		<li><a href="http://bitovi.com/training/">Training</a></li>
+	      		<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+	    	</ul>
+	  	</li>
+	</ul>
+	<div class="brand">
+		<div class="logo">
+			<a href="../../../index.html" alt="CanJS"></a>
+		</div>
+	</div>
+	<ul class="top-right-links">
+  <li>
+    <a href="https://gitter.im/canjs/canjs">Chat</a>
+  </li>
+  <li>
+    <a href="http://forums.donejs.com/c/canjs">Forum</a>
+  </li>
+  <li>
+    <a class="github-button nav-social" href="https://github.com/canjs/canjs" data-count-href="/canjs/canjs/stargazers" data-count-api="/repos/canjs/canjs#stargazers_count">Star</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/canjs" class="twitter-follow-button nav-social" data-show-count="true" data-show-screen-name="false">Follow @canjs</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </li>
+</ul>
+</div>
+<div class="breadcrumb">
+	
+		<li><a href="../pmo.html">Place My Order Guide</a></li> /
+	
+	
+	<li><a href="Observables.html">Observables</a></li>
+	
+	<li class="breadcrumb-dropdown">/ <a> On this page</a>
+	  <ul class="on-this-page"></ul>
+	</li>
+	<div class="nav-toggle" title="Back to top"></div>
+</div>
+
+
+    </div>
+    <div class="bottom-right">
+      <article>
+  <section class="title">
+	<div class="page-type">
+		<h1>Observables</h1>
+		<div>page</div>
+	</div>
+	
+  
+	<section class="description">
+    
+</section>
+
+  
+	
+</section>
+<section class="on-this-page-table">
+</section>
+<section class="title-footer">
+	
+	
+		<ul class="title-links">
+			<!-- <li><a href="#">docco</a></li> -->
+			<li><a href="//github.com/canjs/canjs/tree/v3.0.0/docs/can-guides/experiment/pmo/observables.md">source</a></li>
+			<!-- <li><a href="#">download</a></li> -->
+			<!-- <li><a href="#">tests</a></li> -->
+		</ul>
+	
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+    <section class="body">
+    <div class="getting-started">
+<hr />
+<p><strong>In this Chapter</strong></p>
+<ul>
+<li><code>can.Map</code>, and</li>
+<li><code>can.List</code></li>
+</ul>
+<hr />
+<p>Observables are the subjects in the
+<a href="http://en.wikipedia.org/wiki/Observer_pattern">observer pattern</a>.
+They let you create relationships between objects
+where one object (or objects) listens for and responds to changes in another object.
+Most of the core objects in CanJS are observables. Understanding how to effectively
+work with observables lies at the heart of understanding how to build successful
+CanJS applications.</p>
+<p>In this section, we’ll review the two observables that make up the core of most CanJS objects:</p>
+<ul>
+<li><a href="../docs/can.Map.html"><code>can.Map</code></a> - Used for Objects.</li>
+<li><a href="../docs/can.List.html"><code>can.List</code></a> - Used for Arrays.</li>
+</ul>
+<p><code>can.Map</code> and <code>can.List</code> are often extended to create observable types. For example,
+<a href="../docs/can.Model.html">can.Model</a> and <a href="../docs/can.route.html">can.route</a> are
+based on <code>can.Map</code>, and a <code>can.Component</code>’s <a href="../docs/can.Component.prototype.viewModel.html"><code>viewModel</code></a>
+is a <code>can.Map</code>.</p>
+<h2>Creating Instances</h2>
+<p>To create a Map, call <code>new can.Map(object)</code>. This will give you a map
+with the same properties and values as the <em>object</em> you passed in to the <code>can.Map</code> constructor.</p>
+<p>To create a List, call <code>new can.List(array)</code>. This will give you a List with the same elements as the
+<em>array</em> you passed into the <code>can.List</code> constructor.</p>
+<pre><code>var pagination = new can.Map({page: 1, perPage: 25, count: 1388});
+pagination.attr('perPage'); // 25
+
+var hobbies = new can.List(['programming', 'bball', 'party rocking']);
+hobbies.attr(2); // 'party rocking'
+</code></pre>
+<h2>Manipulating properties</h2>
+<p>The <a href="../docs/can.Map.prototype.attr.html"><code>attr</code></a> method is
+used to read a property from, or write a property to a <code>can.Map</code> or <code>can.List</code>.
+While you can read the properties of a <code>can.Map</code> or <code>can.List</code> directly off
+of the object, to take advantage of the observable functionality you must
+use the <code>.attr</code> syntax.</p>
+<pre><code>var pagination = new can.Map({page: 1, perPage: 25, count: 1388});
+
+pagination.attr('perPage');     // 25
+pagination.attr('perPage', 50);
+pagination.attr('perPage');     // 50
+
+pagination.attr({page: 10, lastVisited: 1});
+pagination.attr(); // {page: 10, perPage: 50, count: 1388, lastVisited: 1}
+</code></pre>
+<p>Properties can be removed by using <a href="../docs/can.Map.prototype.removeAttr.html"><code>removeAttr</code></a>,
+which is equivalent to the <code>delete</code> keyword:</p>
+<pre><code>pagination.removeAttr('count');
+pagination.attr(); // {page: 10, perPage: 50, lastVisited: 1}
+</code></pre>
+<h2>Extending a Map</h2>
+<p>Extending a <code>can.Map</code> (or <code>can.List</code>) lets you create custom observable
+types. The following extends <code>can.Map</code> to create a Paginate type that
+has a <code>.next()</code> method:</p>
+<pre><code>Paginate = can.Map.extend({
+  define: {
+    limit: {
+      value: 100
+    },
+    offset: {
+      value: 100
+    },
+    count: {
+      value: Infinity
+    }
+  },
+  next: function() {
+    this.attr('offset', this.attr('offset') + this.attr('limit') );
+  }
+});
+
+var pageInfo = new Paginate();
+pageInfo.attr(&quot;offset&quot;) //-&gt; 100
+
+pageInfo.next();
+
+pageInfo.attr(&quot;offset&quot;) //-&gt; 200
+</code></pre>
+<h2>Responding to changes</h2>
+<p>When a property on a Map is changed with <code>attr</code>, it will emit an event with the
+name of the changed property.  You can <a href="../docs/can.Map.prototype.bind.html">bind</a>
+to those events and perform some action:</p>
+<pre><code>pagination.bind('page', function(event, newVal, oldVal) {
+    newVal; // 11
+    oldVal; // 10
+
+    $(&quot;#page&quot;).text(&quot;Page: &quot;+newVal);
+});
+
+pagination.attr('page', 11);
+</code></pre>
+<p>Although <code>bind</code> and its corresponding <code>unbind</code> method exist, <strong>there's almost no
+reason to ever use them!</strong>  This is because there are better ways to perform
+the common actions that would require binding to an observable.</p>
+<p>For example, <code>stache</code> templates will automatically update when an observable changes:</p>
+<pre><code>var template = can.stache(&quot;&lt;span id='page'&gt;{{page}}&lt;/span&gt;&quot;);
+$(&quot;body&quot;).append(template(pagination));
+
+document.getElementById(&quot;page&quot;).innerHTML //-&gt; &quot;11&quot;
+
+pagination.attr('page', 12);
+
+document.getElementById(&quot;page&quot;).innerHTML //-&gt; &quot;12&quot;
+</code></pre>
+<p>The other common use case is to create some new, derived value.  <a href="../docs/can.compute.html">can.compute</a>
+or <a href="../docs/can.Map.prototype.define.get.html">define getters</a> lets you use functional
+(and reactive) programming techniques to derive new values from source
+state.</p>
+<p>For example, we can create a virtual <code>page</code> observable that derives its value from the
+<code>offset</code> and <code>limit</code>:</p>
+<pre><code>var pagination = new Paginate({
+  limit: 10,
+  offset: 20
+});
+
+var page = can.compute(function(){
+  return Math.floor(pagination.attr('offset') /
+                    pagination.attr('limit')) + 1;
+});
+
+page() //-&gt; 3
+
+page.bind(&quot;change&quot;, function(ev, newValue){
+  newValue //-&gt; 4
+});
+
+pagination.attr(&quot;offset&quot;,30);
+</code></pre>
+<p>In this example <code>page</code> will automatically be updated when either <code>offset</code> or <code>limit</code> change.</p>
+<p>However, <code>page</code> is more commonly created as a &quot;virtual&quot; property of the <code>Paginate</code> Map type
+using a <a href="../docs/can.Map.prototype.define.get.html">define getter</a>:</p>
+<pre><code>Paginate = can.Map.extend({
+  define: {
+    ...
+    page: {
+      get: function() {
+        return Math.floor(this.attr('offset') / this.attr('limit')) + 1;
+      }
+    }
+  },
+  ...
+});
+
+var pageInfo = new Paginate({
+  limit: 10,
+  offset: 20,
+  count: 30
+});
+pageInfo.attr(&quot;page&quot;) //-&gt; 3
+
+pageInfo.bind(&quot;page&quot;, function(ev, newVal){
+  newVal //-&gt; 4
+});
+
+pageInfo.next();
+</code></pre>
+<p>Using computes and define getters are very similar to using functional-reactive programming
+event streams.  Given some source state, they are able to derive and combine it into new values.</p>
+<p>Computes and define getters are easier, but less powerful than event streams.  Computes
+and define getters only respond to changes in values where event streams
+are also able to respond to events. However, computes and define getters
+are eaiser to express and automatically manage subscriptions to source values.</p>
+<p>For example, consider deriving a total for one of two menus depending on the time
+of day:</p>
+<pre><code>var lunch = new can.List([
+  {name: &quot;nachos&quot;, price: 10.25},
+  {name: &quot;water&quot;, price: 0},
+  {name: &quot;taco&quot;, price: 3.25}
+]);
+
+var dinner = new can.List([
+  {name: &quot;burrito&quot;, price: 12.25},
+  {name: &quot;agua&quot;, price: 1.20}
+]);
+
+var timeOfDay = can.compute(&quot;lunch&quot;);
+
+var total = can.compute(function(){
+  var list = timeOfDay() === &quot;lunch&quot; ? lunch : dinner;
+  var sum = 0;
+  list.forEach(function(item){
+    sum += item.attr(&quot;price&quot;);
+  });
+  return sum;
+});
+</code></pre>
+<p>In this example, <code>total</code> will listen to not only <code>timeOfDay</code>, but
+also when items are added or removed to <code>lunch</code> or <code>dinner</code>, and each item's
+<code>price</code>.  Furthermore, it only listens to just what needs to be listened to. It will
+listen to either <code>lunch</code> or <code>dinner</code>, but not both.</p>
+<p>In the <a href="TheDefinePlugin.html">next chapter</a> we'll expand on the use of the define plugin
+and show how it can handle asyncronous derived data like AJAX requests.</p>
+<h2>Iterating though a Map</h2>
+<p>If you want to iterate through the properties on a Map, use <code>each</code>:</p>
+<pre><code>var pagination = new can.Map({page: 10, perPage: 25, count: 1388});
+
+pagination.each(function(val, key) {
+    console.log(key + ': ' + val);
+});
+
+// The console shows:
+// page: 10
+// perPage: 25
+// count: 1388
+</code></pre>
+<h2>Observable Arrays</h2>
+<p>CanJS also provides observable arrays with <code>can.List</code>.
+<code>can.List</code> inherits from <code>can.Map</code>. A <code>can.List</code> works much the same way a
+<code>can.Map</code> does, with the addition of methods useful for working with
+arrays:</p>
+<ul>
+<li><a href="../docs/can.List.prototype.indexOf.html"><code>indexOf</code></a>, which looks for an item in a
+List.</li>
+<li><a href="../docs/can.List.prototype.pop.html"><code>pop</code></a>, which removes the last item from a
+List.</li>
+<li><a href="../docs/can.List.prototype.push.html"><code>push</code></a>, which adds an item to the end of a
+List.</li>
+<li><a href="../docs/can.List.prototype.shift.html"><code>shift</code></a>, which removes the first item from
+a List.</li>
+<li><a href="../docs/can.List.prototype.unshift.html"><code>unshift</code></a>, which adds an item to the front
+of a List.</li>
+<li><a href="../docs/can.List.prototype.splice.html"><code>splice</code></a>, which removes and inserts items
+anywhere in a List.</li>
+</ul>
+<p>When these methods are used to modify a List events are
+emitted that you can listen for, as well. See <a href="../docs/can.List.html">the API for Lists</a> for more
+information.</p>
+<p><span class="pull-left"><a href="ApplicationFoundations.html">&lsaquo; Application Foundations</a></span>
+<span class="pull-right"><a href="TheDefinePlugin.html">The Define Plugin &rsaquo;</a></span></p>
+</div>
+
+</section>
+
+  
+
+
+<script type="text/javascript">
+  var docObject = {"src":{"path":"docs/can-guides/experiment/pmo/observables.md"},"description":"\n","name":"guides/pmo/Observables","title":"Observables","type":"page","parent":"guides/pmo","order":3,"disabletableofcontents":true,"comment":" ","pathToRoot":"../../.."};
+</script>
+</article>
+	  
+        <footer><p>CanJS is part of <a href="http://donejs.com" target="_blank">DoneJS</a>. Created and maintained by the core <a href="https://donejs.com/About.html#section=section_Team" target="_blank">DoneJS team</a> and <a href="http://bitovi.com" target="_blank">Bitovi</a>. <strong>Currently 3.0.0.</strong></p></footer>
+	      </div>
+  </div>
+</div>
+
+		
+			<script>
+				steal = {
+				  	instantiated: {
+				    	"bundles/bit-docs-site/static.css!$css" : null
+				  	}
+			  	};
+			</script>
+			<script type='text/javascript' data-main="bit-docs-site/static" src="../../static/node_modules/steal/steal.production.js"></script>
+		
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>

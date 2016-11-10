@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: [object Object]
+	@page guides/pmo/AppStateAndRouting
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CanJS - App State and Routing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<link rel="stylesheet" type="text/css" href="../../static/bundles/bit-docs-site/static.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/docs/images/canjs_favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../docs/images/canjs_favicon_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../docs/images/canjs_favicon_114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../docs/images/canjs_favicon_128x128.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../docs/images/canjs_favicon_144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../docs/images/canjs_favicon_152x152.png">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-11', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+		<label for="nav-trigger">Menu</label>
+	  	<div id="everything">
+  <div id="left" class="column">
+    <div class="top-left">
+      
+          <div class="brand">
+	<div class="logo">
+		<a href="../../../index.html" alt="CanJS"></a>
+		<div class="dropdown project-dropdown">
+			<a href="https://donejs.com/">DoneJS</a>
+			<a href="http://stealjs.com/">StealJS</a>
+			<a href="http://jquerypp.com/">jQuery ++</a>
+			<a href="https://funcunit.com/">FuncUnit</a>
+			<a href="http://documentjs.com/">DocumentJS</a>
+		</div>
+	</div>
+	<div class="version">
+		<div class="version-number">
+			3.0.0
+		</div>
+		<div class="dropdown version-dropdown">
+			
+				<a href="https://v2.canjs.com">2.3.27</a>
+			
+		</div>
+	</div>
+</div>
+
+<div class="search-bar">
+	<p>
+		&nbsp;
+	</p>
+</div>
+
+      
+    </div>
+    <div class="bottom-left">
+       <div class="social-side-container">
+        <ul class="social-side">
+  <li>
+    <a class="header-mobile github" href="https://github.com/canjs/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/github.png">Github</a>
+  </li>
+  <li>
+    <a class="header-mobile twitter" href="https://twitter.com/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/twitter.png">Twitter</a>
+  </li>
+</ul>
+<ul class="social-side">
+  <li>
+    <a class="header-mobile" href="https://gitter.im/canjs/canjs" target="_blank">Chat</a>
+  </li>
+  <li>
+    <a class="header-mobile" href="http://forums.donejs.com/c/canjs" target="_blank">Forum</a>
+  </li>
+</ul>
+
+      </div>
+        
+            
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Components.html"
+							title="">
+							Components
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ApplicationDesign.html"
+							title="">
+							Application Design
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../pmo/Setup.html"
+							title="">
+							Setup
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Constructors.html"
+							title="">
+							Constructors
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="TheDefinePlugin.html"
+							title="">
+							The Define Plugin
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="StacheTemplates.html"
+							title="">
+							Stache Templates
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="current
+           						parent
+           						expanded">
+						<a class="page"
+							href="AppStateAndRouting.html"
+							title="">
+							App State and Routing
+						</a>
+						
+							
+
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Observables.html"
+							title="">
+							Observables
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="ViewModels.html"
+							title="">
+							View Models
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="DataModelsAndFixtures.html"
+							title="">
+							Data Models and Fixtures
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="LoadingStates.html"
+							title="">
+							Loading States
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="EventHandling.html"
+							title="">
+							Event Handling
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="WebServiceCommunication.html"
+							title="">
+							Web Service Communication
+						</a>
+						
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="Recap.html"
+							title="">
+							Recap
+						</a>
+						
+					</li>
+				
+			
+		
+	</ul>
+
+
+        
+    </div>
+  </div>
+  <div id="right" class="column">
+    <div class="top-right">
+      <div class="top-right-top">
+	<ul class="top-right-bitovi">
+	  	<li class="dropdown">
+	    	<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+	    	<ul class="dropdown-menu">
+	      		<li><a href="http://bitovi.com">Bitovi.com</a></li>
+	      		<li><a href="http://bitovi.com/blog/">Blog</a></li>
+	      		<li><a href="http://bitovi.com/consulting/">Consulting</a></li>
+	      		<li><a href="http://bitovi.com/training/">Training</a></li>
+	      		<li><a href="http://bitovi.com/open-source/">Open Source</a></li>
+	    	</ul>
+	  	</li>
+	</ul>
+	<div class="brand">
+		<div class="logo">
+			<a href="../../../index.html" alt="CanJS"></a>
+		</div>
+	</div>
+	<ul class="top-right-links">
+  <li>
+    <a href="https://gitter.im/canjs/canjs">Chat</a>
+  </li>
+  <li>
+    <a href="http://forums.donejs.com/c/canjs">Forum</a>
+  </li>
+  <li>
+    <a class="github-button nav-social" href="https://github.com/canjs/canjs" data-count-href="/canjs/canjs/stargazers" data-count-api="/repos/canjs/canjs#stargazers_count">Star</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/canjs" class="twitter-follow-button nav-social" data-show-count="true" data-show-screen-name="false">Follow @canjs</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </li>
+</ul>
+</div>
+<div class="breadcrumb">
+	
+		<li><a href="../pmo.html">Place My Order Guide</a></li> /
+	
+	
+	<li><a href="AppStateAndRouting.html">App State and Routing</a></li>
+	
+	<li class="breadcrumb-dropdown">/ <a> On this page</a>
+	  <ul class="on-this-page"></ul>
+	</li>
+	<div class="nav-toggle" title="Back to top"></div>
+</div>
+
+
+    </div>
+    <div class="bottom-right">
+      <article>
+  <section class="title">
+	<div class="page-type">
+		<h1>App State and Routing</h1>
+		<div>page</div>
+	</div>
+	
+  
+	<section class="description">
+    
+</section>
+
+  
+	
+</section>
+<section class="on-this-page-table">
+</section>
+<section class="title-footer">
+	
+	
+		<ul class="title-links">
+			<!-- <li><a href="#">docco</a></li> -->
+			<li><a href="//github.com/canjs/canjs/tree/v3.0.0/docs/can-guides/experiment/pmo/app-state-and-routing.md">source</a></li>
+			<!-- <li><a href="#">download</a></li> -->
+			<!-- <li><a href="#">tests</a></li> -->
+		</ul>
+	
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+    <section class="body">
+    <div class="getting-started">
+<hr />
+<p><strong>In this Chapter</strong></p>
+<ul>
+<li>AppState</li>
+<li>Basic Routing</li>
+<li>Binding the AppState Object to the Application and Routes</li>
+</ul>
+<p>Get the code for: <a href="/guides/examples/PlaceMyOrder/ch-3_canjs-getting-started.zip">chapter: app state and routing</a></p>
+<hr />
+<p>As mentioned in the <a href="Tutorial.html">introduction</a>, CanJS suggests using a global
+<code>appState</code> object to manage the state of your application. The <code>appState</code> object
+is bound to two things:</p>
+<ol>
+<li>The application’s base template</li>
+<li>The application’s routing</li>
+</ol>
+<p>Since you already know about creating instances of <code>can.Map</code>, creating an
+<code>appState</code> object, which is a <code>can.Map</code>, will be easy. Let’s see how this works.
+Open up your <code>app.js</code> file and update it as shown below.</p>
+<pre><code>$(function () {
+    var AppState = can.Map.extend({});
+
+    var appState = new AppState();
+
+    // Bind the application state to the root of the application
+    $('#can-main').html(can.view('main.stache', appState));
+
+    // Set up the routes
+    can.route(':page', { page: 'home' });
+    can.route(':page/:slug', { slug: null });
+    can.route(':page/:slug/:action', { slug: null, action: null });
+
+    $('body').on('click', 'a[href=&quot;javascript://&quot;]', function(ev) {
+        ev.preventDefault();
+    });
+
+    // Bind the application state to the can.route
+    can.route.map(appState);
+
+    can.route.ready();
+
+    //appState.attr('page', 'restaurants');
+
+    appState.bind('change', function(ev, prop, change, newVal, oldVal) {
+        alert('Changed the “' + prop + '” property from “' + oldVal + '” to “' + newVal + '”.');
+    });
+});
+</code></pre>
+<h2>Routing</h2>
+<p>Before we dive into the details of the <code>appState</code> object, let’s quickly discuss
+routing. Routing in CanJS allows us to manage browser history and client state by
+synchronizing the <code>window.location.hash</code> with a <code>can.Map</code>. In other words, we can
+use routing to reflect the state of our application or set the state of our application.
+One of the things that makes routing powerful is that it records the state of the
+application in the browser’s history. We’ll see some specific examples of this
+as we proceed.</p>
+<p>In our application, we setup routing by:</p>
+<ul>
+<li>defining the possible routes by calling <code>can.route</code>,</li>
+<li>binding our <code>appState</code> object to the route with a call to <code>can.route.map</code>, and</li>
+<li>calling <code>can.route.ready()</code>, which sets up two-way binding between the
+browser’s <code>window.location.hash</code> and the <code>can.route</code>’s internal <code>can.Map</code>.</li>
+</ul>
+<p>On lines 10–12, we define all the potential routes in our application and the
+properties on the <code>appState</code> object. Let’s look at each line individually.</p>
+<pre><code>can.route(':page', { page: 'home' });
+</code></pre>
+<p>This line does two things:</p>
+<ol>
+<li>Creates a base route that is bound to one property: <code>page</code>.</li>
+<li>Sets the default value of the <code>page</code> property to <code>'home'</code>.</li>
+</ol>
+<p>In our app, this will allow the following URLs:</p>
+<ul>
+<li><code>#!</code> (which will set <code>page</code> to <code>'home'</code> because that’s the default)</li>
+<li><code>#!orders/</code> (which will set <code>page</code> to <code>'orders'</code>)</li>
+<li><code>#!restaurants/</code> (which will set <code>page</code> to <code>'restaurants'</code>)</li>
+</ul>
+<pre><code>can.route(':page/:slug', { slug: null });
+</code></pre>
+<p>This line does two things:</p>
+<ol>
+<li>Binds a new <code>slug</code> property to our <code>appState</code> object.</li>
+<li>Sets the default value of the <code>slug</code> property to <code>null</code>.</li>
+</ol>
+<p>This makes the following URLs possible:</p>
+<ul>
+<li><code>#!restaurants/spago/</code> (<code>page</code> will be <code>'restaurants'</code> and <code>slug</code> will be <code>'spago'</code>)</li>
+</ul>
+<p>Anything in the second part of the URL will be the <code>slug</code> property on our
+<code>appState</code> object.</p>
+<pre><code>can.route(':page/:slug/:action', { slug: null, action: null });
+</code></pre>
+<p>This line does two things:</p>
+<ol>
+<li>Binds a new <code>action</code> property to our <code>appState</code> object.</li>
+<li>Sets the default value of the <code>action</code> property to <code>null</code>.</li>
+</ol>
+<p>This makes the following URLs possible:</p>
+<ul>
+<li><code>#!restaurants/spago/order/</code> for order confirmation; again, <code>action</code> will be <code>'order'</code></li>
+</ul>
+<p>Let’s take a moment to see how these routes are bound to our <code>appState</code> object.
+Notice the <code>//appState.attr('page', 'restaurants');</code> line at the end of our
+<code>app.js</code> file; let’s uncomment that line so it looks like
+<code>appState.attr('page', 'restaurants');</code></p>
+<p>Now, refresh the app in your browser. The path will now be <code>#!restaurants</code>,
+and you’ll notice that the Restaurants link in the navigation is highlighted.</p>
+<p><img src="../can/guides/images/app-state-routing/app_state_route_rest.png" alt="place-my-order.com home page" /></p>
+<p>Note that, after we initialized our routes, updating the value of our
+<code>appState</code>’s <code>page</code> property caused the route to update as well.
+The value of the <code>page</code> property was serialized and appended
+to the <code>window.location.hash</code>.</p>
+<p>Let’s see what happens if we adjust the value of the hash. To monitor this
+change, we’ve included the following lines:</p>
+<pre><code>appState.bind('change', function(ev, prop, change, newVal, oldVal) {
+    alert('Changed the “' + prop + '” property from “' + oldVal + '” to “' + newVal + '”.');
+});
+</code></pre>
+<p>These lines use <a href="../docs/can.Map.prototype.bind.html"><code>can.Map.bind</code></a> to
+watch for changes to the <code>appState</code> object. Go ahead and change the URL from
+<code>#!restaurants</code> to <code>#!orders</code>. You should see an alert with this message:</p>
+<p><img src="../can/guides/images/app-state-routing/change_state_alert.png" alt="place-my-order.com home page" /></p>
+<p>It was mentioned earlier that we bound our AppState to the application’s <code>main.stache</code>.
+This is the key to connecting the AppState to our <a href="Components.html">components</a>.
+Because the <code>appState</code> object is bound to our main template, which includes the rest of
+the components in the app, <em>these attributes will automatically be included in the scope of
+the components</em>.</p>
+<p>Before moving on, let’s remove the following lines from our application:</p>
+<pre><code>appState.attr('page', 'restaurants');
+
+appState.bind('change', function(ev, prop, change, newVal, oldVal) {
+    alert('Changed the “' + prop + '” property from “' + oldVal + '” to “' + newVal + '”.');
+});
+</code></pre>
+<hr />
+<p><span class="pull-left"><a href="StacheTemplates.html">&lsaquo; Stache Templates</a></span>
+<span class="pull-right"><a href="Components.html">Components &rsaquo;</a></span></p>
+</div>
+
+</section>
+
+  
+
+
+<script type="text/javascript">
+  var docObject = {"src":{"path":"docs/can-guides/experiment/pmo/app-state-and-routing.md"},"description":"\n","name":"guides/pmo/AppStateAndRouting","title":"App State and Routing","type":"page","parent":"guides/pmo","order":6,"disabletableofcontents":true,"comment":" ","pathToRoot":"../../.."};
+</script>
+</article>
+	  
+        <footer><p>CanJS is part of <a href="http://donejs.com" target="_blank">DoneJS</a>. Created and maintained by the core <a href="https://donejs.com/About.html#section=section_Team" target="_blank">DoneJS team</a> and <a href="http://bitovi.com" target="_blank">Bitovi</a>. <strong>Currently 3.0.0.</strong></p></footer>
+	      </div>
+  </div>
+</div>
+
+		
+			<script>
+				steal = {
+				  	instantiated: {
+				    	"bundles/bit-docs-site/static.css!$css" : null
+				  	}
+			  	};
+			</script>
+			<script type='text/javascript' data-main="bit-docs-site/static" src="../../static/node_modules/steal/steal.production.js"></script>
+		
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>
